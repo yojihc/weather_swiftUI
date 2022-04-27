@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LaunchScreen.swift
 //  weather_swiftUI
 //
 //  Created by yoji on 4/27/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct LoginView: View {
+struct LaunchScreen: View {
     
     
     @State private var login = ""
@@ -28,7 +28,7 @@ struct LoginView: View {
         
         ZStack {
             
-            GeometryReader { _ in Image("sunny_weathe")
+            GeometryReader { _ in Image("sunny_weather")
                     .resizable() .edgesIgnoringSafeArea(.all)
             }
             
@@ -81,8 +81,8 @@ struct LoginView: View {
 //        } }
 
 
-struct LoginView_Previews: PreviewProvider {
+struct LaunchScreen_Previews: PreviewProvider {
             static var previews: some View {
-                LoginView()
+                LaunchScreen()
             }
         }
